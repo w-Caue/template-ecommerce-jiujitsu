@@ -1,17 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <TheNavbar />
+  <TheFooter />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// @ is an alias to /src
+import TheNavbar from "@/components/TheNavbar.vue";
+import TheFooter from "./components/TheFooter.vue";
 
 export default {
-  name: 'App',
+  name: "HomeView",
   components: {
-    HelloWorld
-  }
-}
+    TheNavbar,
+    TheFooter
+  },
+};
 </script>
 
 <style>
@@ -20,7 +23,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
